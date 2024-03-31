@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fonte-principal: "Allura", cursive;
+    --fonte-secundaria: "Adamina", serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    height: 14em;
+    position: relative;
+}
+
+.titulo-imagem {
+    color: white;
+    font-size: 5em;
+    padding-bottom: 1.5em;
+}
+
+.conteudo-imagem {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -180%);
+    z-index: 1; /* Move a imagem para trás do texto */
+}
+
+.conteudo-titulos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 7em;
+}
+
+.titulo-nome {
+    font-family: var(--fonte-principal);
+    font-size: 3em;
+}
+
+.subtitulo-descricao {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.25em;
+}
+
+.conteudo-links {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 2em;
+}
+.imagem-redes {
+    width: 56px;
+    height: 57px;
+}
+
+.links-informacoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.links-informacoes-botao {
+    text-decoration: none;
+    text-align: center;
+    font-size: 2.5em;
+    color: black;
+    padding: 0 3em; 
+    border: 3px solid black;
+    border-radius: 50px;
+    margin: 0.5em;
+    white-space: nowrap; /* Impede a quebra de linha */
+    overflow: hidden; /* Evita que o texto vaze para fora do botão */
+    width: 10em;
+}
+
+.links-informacoes-botao:hover{
+    cursor: pointer;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.5);
+}
